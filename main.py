@@ -36,6 +36,9 @@ class Calculator(QMainWindow):
         self.vaciar.clicked.connect(self.clearDisplay)
 
 
+        #Hacer el QLineEdit no sea editable, para que no se pueda editar ni escribir
+        self.mostrar.setReadOnly(True)
+        
 #Funciones#
     def onButtonClick(self, text):
         current_text = self.mostrar.text()
